@@ -9,7 +9,7 @@ class Wheather {
     this.temperature_la = 0,
     this.temperature_lo = 0,
     this.condition = 'Sunny',
-    this.img = '',
+    this.img =  "//cdn.weatherapi.com/weather/64x64/night/248.png",
   });
   factory Wheather.fromJson(Map<String, dynamic> json) {
     return Wheather(

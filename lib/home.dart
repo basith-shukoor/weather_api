@@ -238,7 +238,16 @@ class _WeatherState extends State<Weatherapi> {
                 color: Colors.white70,
               )),
             ),
-            Icon(Icons.cloud,size: 60,color: Colors.white,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 80,
+                  width: 80,
+                  child: Image.network('https:${im.toString()}'),
+                ),
+              ],
+            ),
 
             Text(temp.toString(),
             style: TextStyle(
